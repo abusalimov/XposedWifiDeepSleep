@@ -15,4 +15,10 @@ Nevertheless, Wifi lock is a good mechanism when used carefully, and generally i
 
 The solution
 ------------
-This mod alters a system state machine responsible for managing Wi-Fi so that once put to sleep it can not be woken up by any application that requests a lock. Wi-Fi is only put asleep when no application holds a lock. That is it doesn't cancel locks held already, but once all of them are gone, no one else is able to aquire a new lock until the screen is turned on and unlocked. This doesn't apply to special [high performance](http://developer.android.com/reference/android/net/wifi/WifiManager.html#WIFI_MODE_FULL_HIGH_PERF) Wifi lock, it still can be aquired as usual even in asleep mode (anyway, it seems that applications use this lock rather rarely, so the battery should not became an issue).
+This mod alters a system state machine responsible for managing Wi-Fi so that once put to sleep it can not be woken up by any application that requests a lock. Wi-Fi is only put asleep when no application holds a lock. That is it doesn't cancel locks held already, but once all of them are gone, no one else is able to aquire a new lock until the screen is turned on and unlocked. This doesn't apply to special [high performance](http://developer.android.com/reference/android/net/wifi/WifiManager.html#WIFI_MODE_FULL_HIGH_PERF) Wifi lock, it still can be aquired as usual even in asleep mode (anyway, it seems that applications does not use to use this lock too often, so the battery should not became an issue).
+
+Installation
+------------
+ 1. Download and install [Xposed framework](http://repo.xposed.info/module/de.robv.android.xposed.installer)
+ 2. Search for and install **TBD** module
+ 3. Activate the module and reboot
