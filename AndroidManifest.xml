@@ -14,7 +14,7 @@
         android:theme="@style/AppTheme" >
         <meta-data android:value="true" android:name="xposedmodule"/>
         <meta-data android:value="2.0*" android:name="xposedminversion"/>
-        <meta-data android:value="Prevents Wi-Fi from being awakened before unlocking the screen or by Wi-Fi locks." android:name="xposeddescription"/>
+        <meta-data android:value="Prevents Wi-Fi from waking up on the lock screen or by application Wi-Fi locks." android:name="xposeddescription"/>
     </application>
 
 </manifest>
