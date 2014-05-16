@@ -1,5 +1,5 @@
 <resources>
 
-    <string name="app_name">Wifi Deep Sleep</string>
+    <string name="app_name">Xposed Wi-Fi Deep Sleep</string>
 
 </resources>
