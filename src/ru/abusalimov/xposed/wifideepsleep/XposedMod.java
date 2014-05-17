@@ -17,8 +17,8 @@ public class XposedMod implements IXposedHookLoadPackage {
 		}
 
 		XposedHelpers.findAndHookMethod(
-				WifiControllerDeviceInactiveStateProcessMessageMethodHook.WIFI_CONTROLLER +
-				"$DeviceInactiveState", lpparam.classLoader,
+				WifiControllerDeviceInactiveStateProcessMessageMethodHook.DEVICE_INACTIVE_STATE,
+				lpparam.classLoader,
 				"processMessage", Message.class,
 				new WifiControllerDeviceInactiveStateProcessMessageMethodHook());
 	}
